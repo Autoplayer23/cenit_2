@@ -195,10 +195,9 @@ body {
   position: relative;
   left: 180px;
   overflow: hidden;
-  cursor: pointer;
   object-fit: cover;
   display: flex;
-  font-size: 1.8rem
+  font-size: 2rem
 }
 .user {
   position: relative;
@@ -311,6 +310,53 @@ body {
   color: var(--white);
 }
 
+
+.cardBox2 {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 5fr);
+  grid-gap: 30px;
+}
+.cardBox2 .card {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox2 .card .numbers {
+  font-size: 2.5rem;
+  color: var(--blue);
+  margin:auto;
+}
+
+.cardBox2 .card .cardName {
+  color: var(--black);
+  font-size: 4rem;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBox2 .card .iconBx {
+  font-size: 3.5rem;
+  color: var(--black2);
+}
+
+.cardBox2 .card:hover {
+  background: var(--blue);
+}
+.cardBox2 .card:hover .numbers,
+.cardBox2 .card:hover .cardName,
+.cardBox2 .card:hover .iconBx {
+  color: var(--white);
+}
 
 
 /* ================== Order Details List ============== */
@@ -611,4 +657,36 @@ footer{
   display: flex;
   width:100%;
 }
+
+.button1 {
+  background-color: #FFFFFF;
+  font-size: 24px;
+  border-width: 2px;
+  grid-template-columns: repeat(2, 5fr);
+  width: 33.33%;
+}
+
+.button1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+
+.central{
+  text-align: center;
+  background-color: #5BB3F3;
+  border-radius: 20px;
+  color: #fff;
+
+}
+
+.circular {
+  border-radius: 70%;
+  background-color: yellow;
+  width: 150%;
+  left: 100%;
+  
+}
+
+
 
